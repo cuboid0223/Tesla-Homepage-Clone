@@ -41,4 +41,5 @@
   align-items: center;
   justify-content: flex-end;
   text-transform: capitalize;
+  margin-right: 10px;
 }

@@ -6,7 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.app__itemsContainer {
+  /* 滑動整個頁面 */
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  height: 100vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

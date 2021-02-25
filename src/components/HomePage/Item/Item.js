@@ -13,6 +13,7 @@ const Item = ({
   rightBtnLink,
   twoButtons,
   first,
+  last,
 }) => {
   return (
     <div
@@ -38,10 +39,24 @@ const Item = ({
           {/* 如果是第一張照片的話 */}
           {first && (
             <div className="item__expand">
-              <ExpandMoreIcon style={{ fontSize: 50 }} />
+              <ExpandMoreIcon
+                className="item__expandIcon"
+                style={{ fontSize: 50 }}
+              />
             </div>
           )}
         </div>
+        {last && (
+          <div className="item__footer">
+            <p>Tesla &copy 2021</p>
+            <a href="#">隱私權規範</a>
+            <a href="#">聯絡我們</a>
+            <a href="#">工作機會</a>
+            <a href="#">獲取電子通訊</a>
+            <a href="#">最新消息</a>
+            <a href="#">地點</a>
+          </div>
+        )}
       </div>
     </div>
   );

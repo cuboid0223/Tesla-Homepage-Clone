@@ -1,7 +1,7 @@
 @font-face {
   font-family: "iCielMedium";
   src: local("iCielMedium"), url("./fonts/iCiel-Medium.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 300;
 }
 
 * {
